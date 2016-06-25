@@ -9,6 +9,7 @@ class ExampleTest extends TestCase {
 	 */
 	public function testBasicExample()
 	{
+		$this->baseUrl = '/';
 		$response = $this->call('GET', '/');
 
 		$this->assertEquals(200, $response->getStatusCode());
